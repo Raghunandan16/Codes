@@ -1,0 +1,26 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "random": "cpp",
+        "*.tcc": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "condition_variable": "cpp",
+        "algorithm": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "mutex": "cpp",
+        "shared_mutex": "cpp",
+        "streambuf": "cpp",
+        "thread": "cpp",
+        "iosfwd": "cpp",
+        "ostream": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp",
+        "cstdlib": "cpp",
+        "cinttypes": "cpp",
+        "numeric": "cpp",
+        "ratio": "cpp",
+        "vector": "cpp"
+    }
+}
