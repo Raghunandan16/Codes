@@ -1,3 +1,4 @@
+// https://practice.geeksforgeeks.org/problems/count-the-subarrays-having-product-less-than-k1708/1
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
