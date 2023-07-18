@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/house-robber/submissions/997947502/
+// https://leetcode.com/problems/house-robber/
 #include <bits/stdc++.h>
 using namespace std;
 
