@@ -1,0 +1,26 @@
+%option NOYYWRAP 
+%{
+    #include <stdio.h>
+    #include <string.h>
+    #include <stdlib.h>
+    #include "modhash.c"
+%}
+%%
+
+int|if|else 		                {insertHashTable(yytext);totalSymbols++;}
+[a-zA-Z_]+[a-zA-Z0-9_]*             {insertHashTable(yytext);totalSymbols++;}
+[0-9]+			                    {insertHashTable(yytext);totalSymbols++;}
+[0-9]*"."[0-9]+		                {insertHashTable(yytext);totalSymbols++;}
+"<"|"<="|">"|">="|"=="|"!="		    {insertHashTable(yytext);totalSymbols++;}
+"="|"+="|"-=" 		                {insertHashTable(yytext);totalSymbols++;}
+"("|"["|"{"			                {insertHashTable(yytext);totalSymbols++;}
+")"|"]"|"}"			                {insertHashTable(yytext);totalSymbols++;}
+";"|","			                    {insertHashTable(yytext);totalSymbols++;}
+
+%%
+
+int main(){
+    initializeHashTable();
+    yylex();
+    displayHashTable();
+}
