@@ -1,4 +1,6 @@
-
+// https://leetcode.com/problems/longest-common-prefix/
+#include <bits/stdc++.h>
+using namespace std;
 class Solution
 {
 public:
